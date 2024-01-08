@@ -1,0 +1,14 @@
+<p>authentication works!</p>
+
+<button (click)="getData()">cloick here</button>|
+{{rowData}}
+
+<ng-container *ngIf="rowData">
+
+    <ag-grid-angular 
+    class="ag-theme-alpine"
+    style="width :auto; height: 500px;"
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+></ag-grid-angular>
+</ng-container>

@@ -1,0 +1,38 @@
+.items
+{
+    background-color: #DED0B6;
+    border-radius: 2px;
+    padding: 5px;
+    margin :3px;
+    border-left:4px solid;
+    border-color: red;
+}
+
+
+p{
+    margin: 0px;
+    padding:0px;
+}
+
+fa-icon
+{
+    display: inline-block;
+    margin: 0.5rem;
+    border: 2rem;
+    border-radius: 21px;
+    width: 2rem;
+    text-align: center;
+    color: red ;
+    background-color: antiquewhite;
+}
+
+fa-icon:hover
+{
+    color: black !important;
+}
+.reminder
+{
+        border-color: green !important;
+    }
+    
+    

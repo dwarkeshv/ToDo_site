@@ -1,0 +1,21 @@
+
+
+
+.navbar {
+  background-color:black;
+  color: white;
+  padding: 20px;
+  justify-content: center;
+}
+a{
+  text-decoration: none;
+  width :100%;
+}
+a :hover {
+  background-color: grey;
+}
+
+.navbar:nth-child(-n+2) {
+  border-right: 2px solid white;
+  /* Your other styles here */
+}

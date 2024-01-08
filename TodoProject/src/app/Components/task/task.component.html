@@ -1,0 +1,12 @@
+
+<section style="display: flex;justify-content: center;">
+    <div style="width: 501px; ">
+        <app-header></app-header>
+        <app-add-task (onAddTask)="addTask($event)" [editTaskData]="editData"></app-add-task>
+        <!-- <p *ngFor="let task of tasks; let i = index"><span class="p-1">{{i+1}}.</span>{{task.text}}</p> -->
+        <app-task-item *ngFor="let task of tasks"  [data] = "task" (DeleteData)="deleteTask($event)"  (onToggleData)="ToggleChnage(task)"   (EditData)="sendEditDataToForm($event)">
+        </app-task-item>
+        
+    </div>
+</section>
+hi

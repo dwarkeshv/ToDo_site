@@ -1,0 +1,51 @@
+<section >
+
+        <!-- <ng-container *ngFor="let task of tasks" > -->
+<!--             
+            <div class="itemsTrue" *ngIf="task.reminder; else noReminder">
+                <h4 class="d-flex justify-content-between">{{task.text}}  
+                    <fa-icon (click)="isDeleted(task)"  [icon]='faTimesIcon'></fa-icon>
+                </h4>
+                <p class="">{{task.day}}</p>
+
+            </div>
+
+            <ng-template #noReminder >
+                <div class="itemsFalse">
+                    <h4 class="d-flex justify-content-between">{{task.text}}
+                        <fa-icon (click)="isDeleted(task)" [icon]='faTimesIcon'></fa-icon>
+                    </h4>
+                    <p class="">{{task.day}}</p>
+                </div> 
+            
+            </ng-template-->
+               
+<!-- 
+                <div class="items"  [ngStyle]="{'border-color': data.reminder ? 'green' : 'red'}">
+                    <h4 class="d-flex justify-content-between">{{data.text}}
+                        <div>
+                            <fa-icon [ngStyle]="{'color':'#4c9992'}" (click)="isEdit(data)" [icon]='faEditIcon'></fa-icon>
+                            <fa-icon (click)="isDeleted(data)"  [icon]='faTimesIcon'></fa-icon>
+                        </div>
+                    </h4>
+                    <p class="">{{data.day}}</p>
+    
+                </div>  -->
+                
+                <div class="items"  (dblclick)="onToggle(data)" [ngClass]="{reminder: data.reminder}" >
+                    <h4 class="d-flex justify-content-between">{{data.text}}
+                        <div>
+                            <fa-icon [ngStyle]="{'color':'#4c9992'}" (click)="isEdit(data.id)" [icon]='faEditIcon'></fa-icon>
+                            <fa-icon (click)="isDeleted(data)"  [icon]='faTimesIcon'></fa-icon>
+                        </div>
+                    </h4>
+                    <p class="">{{data.day}}</p>
+    
+                </div>
+
+    
+        <!-- </ng-container> -->
+ 
+</section>
+
+

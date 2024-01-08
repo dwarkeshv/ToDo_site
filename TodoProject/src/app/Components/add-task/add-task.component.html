@@ -1,0 +1,34 @@
+
+<section class="items">
+
+<form *ngIf="showAddTask" (ngSubmit)="onSubmit()" class="mt-1 p-2">
+        <h3 style="text-align: center;">{{editTaskData? "Edit Task":"Add Task"}}</h3>
+
+      <div class="container">
+          <div class="row mb-3">
+              <label for="textInput" class="form-label col-6"><h3>Message</h3></label>
+              <!-- <input id="textInput" style="width: max-content" type="text" [(ngModel)]="text"  name="text" placeholder="Enter value Here" class="form-control" value="{{editTaskData ? editTaskData.text : ''}}"> -->
+              <input id="textInput" style="width: max-content" type="text"  [(ngModel)]="text" name="text" placeholder="Enter value Here" class="form-control" value="{{editTaskData ? editTaskData.text : ''}}">
+              <span id="AlertMessage" class="text-danger" style="margin-left: 230px;display: none;">Please Re-Enter Message Field</span>
+            </div>
+            
+            <div class="row mb-3">
+                <label for="dayInput" class="form-label col-6"><h3>Day</h3></label>
+                <input id="dayInput" style="width: max-content" type="text" [(ngModel)]="day" name="day" placeholder="Enter value Here" class="form-control" value="{{editTaskData ? editTaskData.day : ''}}">
+                <span id="AlertDay" class="text-danger" style="margin-left: 230px;display: none;">Please Re-Enter Day Field</span>
+            </div>
+    
+            <div class="row mb-3">
+                <label for="reminder" class="form-check-label col-6"><h3>Reminder</h3></label>
+                <input id="reminder"  type="checkbox" [(ngModel)]="reminder"  name="reminder" class="form-control form-check-input h-auto" [checked]="editTaskData?.reminder" >
+        </div>    
+
+        <div class="row">
+            <div class="col-md-6">
+                <button type="submit" class="btn btn-primary">{{editTaskData? "Edit Task":"Add Task"}}</button>
+            </div>
+            </div>
+    </div>
+    
+  </form>
+</section>

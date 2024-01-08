@@ -1,0 +1,52 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Complete project proposal",
+      "day": "2023-12-01",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Attend online meeting",
+      "day": "2023-12-03",
+      "reminder": true
+    },
+    {
+      "id": 5,
+      "text": "Read a book",
+      "day": "2023-12-05",
+      "reminder": true
+    },
+    {
+      "id": 6,
+      "text": "Plan weekend activities",
+      "day": "2023-12-06",
+      "reminder": false
+    },
+    {
+      "id": 7,
+      "text": "Write blog post",
+      "day": "2023-12-07",
+      "reminder": true
+    },
+    {
+      "id": 8,
+      "text": "Call a friend",
+      "day": "2023-12-08",
+      "reminder": false
+    },
+    {
+      "id": 9,
+      "text": "Cook dinner",
+      "day": "2023-12-09",
+      "reminder": true
+    },
+    {
+      "id": 10,
+      "text": "Review code changes",
+      "day": "2023-12-10",
+      "reminder": false
+    }
+  ]
+}
